@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">Dr Plantae</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="navigation_drawer_open">Open Navigation Drawer</string>
+    <string name="navigation_drawer_close">Close Navigation Drawer</string>
+    <string name="intro_one">Aims to develop an online plant buy platform that will allow users to browse and purchase a wide range of plants from the comfort of their own homes.</string>
+    <string name="intro_two">The platform will offer a range of features such as an easy-to-use interface, plant descriptions, reviews, ratings, and a secure payment system.</string>
+    <string name="intro_three">The platform will be a one-stop-shop for all plant lovers, where they can browse and purchase a wide range of plants from different vendors near you.</string>
+
+    <string name="mission">Aims to develop an online plant buy platform that will allow users to browse and purchase a wide range of plants from the comfort of their own homes. The platform will offer a range of features such as an easy-to-use interface, plant descriptions, reviews, ratings, and a secure payment system. The platform will be a one-stop-shop for all plant lovers, where they can browse and purchase a wide range of plants from different vendors near you.</string>
+    <string name="vision">The vision for this unique platform is to create a convenient and efficient online marketplace that provides users with access to a wide range of plants from various vendors. The platform will be designed to simplify the process of buying plants and making them available to customers in a fast, easy, and secure way. The vision is to create a platform that not only helps users find the plants they need but also helps them discover new varieties and vendors they might not have otherwise known about. By doing so, the platform aims to become a trusted and reliable source for plant enthusiasts, making it easier for them to cultivate a green thumb and bring more plants into their lives. Ultimately, the vision for the online plant buy platform is to make plant shopping an enjoyable and hassle-free experience, creating a greener and more vibrant world.</string>
+
+    <array name="plantType">
+        <item>Creepers</item>
+        <item>Ayurveda</item>
+        <item>Shrubs</item>
+    </array>
+
+    <array name="plantSize">
+        <item>Small</item>
+        <item>Medium</item>
+        <item>Large</item>
+    </array>
+
+    <array name="accessorySize">
+        <item>Small</item>
+        <item>Medium</item>
+        <item>Large</item>
+    </array>
+
+    <array name="accessoryName">
+        <item>PlantPot</item>
+        <item>Seeds</item>
+        <item>Fertilizer</item>
+        <item>Gloves</item>
+        <item>HedgeShear</item>
+    </array>
+
+</resources>

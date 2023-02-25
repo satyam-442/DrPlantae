@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".admin.AdminMainActivity"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="@dimen/_24sdp">
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Plants"
+        android:textAllCaps="false"
+        android:onClick="goToAddPlantPage"
+        android:paddingVertical="@dimen/_15sdp"
+        android:paddingHorizontal="@dimen/_25sdp"
+        app:cornerRadius="@dimen/_18sdp"
+        android:textSize="@dimen/_14sdp"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Accessory"
+        android:textAllCaps="false"
+        android:onClick="goToAddAccessoryPage"
+        android:paddingVertical="@dimen/_15sdp"
+        android:paddingHorizontal="@dimen/_25sdp"
+        app:cornerRadius="@dimen/_18sdp"
+        android:textSize="@dimen/_14sdp"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="View orders"
+        android:textAllCaps="false"
+        android:onClick="goToViewOrdersPage"
+        android:paddingVertical="@dimen/_15sdp"
+        android:paddingHorizontal="@dimen/_25sdp"
+        app:cornerRadius="@dimen/_18sdp"
+        android:textSize="@dimen/_14sdp"/>
+
+</LinearLayout>

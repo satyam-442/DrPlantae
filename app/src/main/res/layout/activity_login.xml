@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:clipToPadding="false"
+    android:overScrollMode="never"
+    android:padding="@dimen/_24sdp"
+    android:scrollbars="none"
+    android:background="#ffffff">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="@dimen/_110sdp"
+            android:layout_height="@dimen/_110sdp"
+            android:layout_gravity="center"
+            android:layout_marginVertical="@dimen/_20sdp"
+            android:src="@drawable/logo"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins"
+                android:text="Welcome to "
+                android:textSize="@dimen/_20ssp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/baloo"
+                android:text="Dr. Plantae"
+                android:textColor="@color/primary_dark"
+                android:textSize="@dimen/_22ssp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="login to continue"
+            android:fontFamily="@font/baloo"
+            android:textSize="@dimen/_16ssp"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:textColor="@color/secondary_text"/>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="@dimen/_3sdp"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_8sdp"
+            app:cardBackgroundColor="@color/secondary_text"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enter email:"
+            android:letterSpacing=".15"
+            android:fontFamily="@font/poppins"
+            android:textSize="@dimen/_13ssp"
+            android:layout_marginTop="@dimen/_40sdp"
+            android:textColor="@color/secondary_text"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/loginEmail"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45sdp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:background="@drawable/input_bg"
+            app:hintEnabled="false">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_45sdp"
+                android:background="@drawable/input_bg"
+                android:hint="someone@gmail.com"
+                android:letterSpacing=".15"
+                android:imeOptions="actionDone"
+                android:importantForAutofill="no"
+                android:inputType="textEmailAddress"
+                android:paddingStart="@dimen/_16sdp"
+                android:paddingEnd="@dimen/_16sdp"
+                android:textSize="@dimen/_13ssp"
+                android:textColor="@color/primary_text"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enter password:"
+            android:letterSpacing=".15"
+            android:fontFamily="@font/poppins"
+            android:textSize="@dimen/_13ssp"
+            android:layout_marginTop="@dimen/_18sdp"
+            android:textColor="@color/secondary_text"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45sdp"
+            android:id="@+id/loginPassword"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:background="@drawable/input_bg"
+            app:passwordToggleEnabled="true"
+            app:hintEnabled="false">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_45sdp"
+                android:background="@drawable/input_bg"
+                android:hint="********"
+                android:letterSpacing=".15"
+                android:imeOptions="actionDone"
+                android:importantForAutofill="no"
+                android:inputType="textPassword"
+                android:paddingStart="@dimen/_16sdp"
+                android:paddingEnd="@dimen/_16sdp"
+                android:textSize="@dimen/_13ssp"
+                android:textColor="@color/primary_text"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/forgotPasswordTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Forgot password?"
+            android:letterSpacing=".1"
+            android:fontFamily="@font/poppins"
+            android:textSize="@dimen/_13ssp"
+            android:gravity="end"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:textColor="@color/error"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:animateLayoutChanges="true">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/loginBtn"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_45sdp"
+                android:text="Sign In"
+                android:textSize="@dimen/_13ssp"
+                app:cornerRadius="@dimen/_12ssp"
+                android:fontFamily="@font/baloo"/>
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_gravity="center"
+                android:progressTint="@color/primary_dark"
+                android:indeterminateTint="@color/primary_dark"
+                android:visibility="gone"/>
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/_30sdp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New to Dr Plantae? "
+                android:fontFamily="@font/poppins"
+                android:textSize="@dimen/_13ssp"
+                android:textColor="@color/primary"/>
+
+            <TextView
+                android:id="@+id/createNewAccountLink"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Click here"
+                android:textStyle="bold"
+                android:fontFamily="@font/poppins"
+                android:textSize="@dimen/_13ssp"
+                android:textColor="@color/primary_dark"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/adminLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Admin login"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:layout_marginVertical="@dimen/_25sdp"
+            android:fontFamily="@font/poppins"
+            android:textSize="@dimen/_13ssp"
+            android:textColor="@color/primary_dark"/>
+
+    </LinearLayout>
+</ScrollView>
